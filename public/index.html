@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I’m sorry 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="drift" aria-hidden="true"></div>
+
+<section class="screen on" id="s1" aria-live="polite">
+  <div class="hero" id="hero1"></div>
+  <h1>I owe you an apology</h1>
+  <div class="card"><p class="msg" id="msg">Tap the button. I have a few things to say.</p></div>
+  <div class="count" id="count"></div>
+  <button class="btn" id="next">New message</button>
+</section>
+
+<section class="screen" id="s2">
+  <div class="duo" id="duo"></div>
+  <h1>Do you forgive me, from your heart?</h1>
+  <div class="row">
+    <button class="btn" id="yes">Yes, I forgive you</button>
+    <button class="btn alt" id="no">No</button>
+  </div>
+</section>
+
+<section class="screen" id="s3">
+  <h1>Thank you! Now help the kittens play</h1>
+  <p class="msg" style="font-size:1.5rem;margin:0">Tap the heart to pass it to the other cat.</p>
+  <div class="stage" id="stage">
+    <div class="ground"></div>
+    <button class="heart idle" id="heart" aria-label="Pass the heart"><svg viewBox="0 0 32 32"><path d="M16 29C5 21 2 15 2 10a7 7 0 0 1 14-2 7 7 0 0 1 14 2c0 5-3 11-14 19z" fill="#ff5c8a"/><path d="M8 8a3 3 0 0 1 3-2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/></svg></button>
+  </div>
+  <div class="count" id="passes">Passes: 0 / 7</div>
+</section>
+
+<section class="screen" id="s4">
+  <div id="garden"><div class="bloom" id="bloom"></div></div>
+  <div class="van" id="van" aria-hidden="true"></div>
+  <div class="fin">
+    <h1>Thank you for forgiving me</h1>
+    <div class="card"><p class="msg">Next time, I’ll say goodbye properly. These flowers are for you.</p></div>
+    <p class="msg" style="font-size:1.6rem;margin:0">And one day, you and me in a caravan, laughing all the way.</p>
+  </div>
+</section>
+<audio id="myMusic" loop>
+    <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎵 Music: on</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
